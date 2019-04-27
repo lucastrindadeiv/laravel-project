@@ -13,8 +13,14 @@
 
 Route::get('/', 'HomeController@home');
 
-Route::get('/algumacoisa', 'HomeController@teste');
+Route::post('/', 'HomeController@add');
 
-Route::get('/algumacoisa/{id}', 'HomeController@teste');
+Route::get('/delete/{id}', 'HomeController@del');
+
+
+
+// Route::get('/algumacoisa', 'HomeController@teste');
+
+// Route::get('/algumacoisa/{id}', 'HomeController@teste');
 
 // id = qualquer coisa que por na url vai continuar mostrando o alguma coisa
